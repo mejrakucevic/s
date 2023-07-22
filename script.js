@@ -30,7 +30,7 @@ const matilda = {
 
 matilda.calcAge = jonas.calcAge;
 
-const f = jonas.calcAge; */
+const f = jonas.calcAge; 
 
 const jonas = {
     firstName: 'Jonas',
@@ -43,4 +43,45 @@ const jonas = {
     greet: () => console.log(`Hey ${this.firstName}`)
 };
 
-jonas.greet();
+jonas.greet(); 
+
+let age = 30;
+let oldAge = age;
+age = 31;
+
+console.log(age);
+
+const me = {
+    name: 'Jonas',
+    age: 30,
+};
+
+const friend = me;
+friend.age = 27;
+console.log('Friend:', friend);
+console.log('Me', me); */
+
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName, oldLastName);
+
+
+
+
+const jessica2 = {
+    firstName: 'jessica',
+    lastName: 'Williams',
+    age: 27,
+    family: ['Alice', 'Beth', 'Emily']
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('John');
+console.log('Before marriage:', jessica2);
+console.log('After marriage:', jessicaCopy);
+
+
