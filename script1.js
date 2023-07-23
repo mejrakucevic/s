@@ -52,3 +52,39 @@ console.log(i,j, k);
 // default values
 const [p=1, q=1, r=1] = [8, 9];
 console.log(p, q, r);
+
+
+const welcomeMessage = "Welcome to the most basic generic restourant on earth!"
+console.log(welcomeMessage);
+const menuu = ['Here is the menu:  1. burger', '2. pizza', '3. pasta']
+console.log(menuu);
+let alert = Number(prompt("Insert the number of your order: "));
+
+ if (alert === 1) {
+    console.log('You have ordered a burger!');
+} else if (alert === 2) {
+    console.log('You have ordered a pizza!');
+
+} else if (alert === 3) {
+    console.log('You have ordered pasta!');
+
+}
+
+const add = "Want something to drink?"
+console.log(add);
+
+const drinkMenu = ['Here is the menu:  1. cola', '2. pepsi', '3. water']
+console.log(drinkMenu);
+
+let alert2 = Number(prompt("Insert the number of your order: "))
+
+if (alert2 === 1) {
+    console.log('You have ordered cola!');
+} else if (alert2 === 2) {
+    console.log('You have ordered pepsi!');
+
+} else if (alert2 === 3) {
+    console.log('You have ordered water, good choice!');
+
+}
+
